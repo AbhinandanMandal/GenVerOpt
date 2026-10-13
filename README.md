@@ -151,7 +151,7 @@ Tested environment: Google Colab, Tesla T4 (14.56 GB), Python 3.13, PyTorch 2.11
 - **No generalisation.** Training loss falls steeply (memorisation) while validation accuracy shows no trend. All test accuracies are within noise of chance.
 - **Validation is optimistic.** Selecting the best of 30 noisy epochs inflates validation accuracy (0.29–0.32 versus 0.25 on test). Use test numbers.
 - **No evidence of option-level shortcuts.** The option-only/raw mean of 0.285 is inside the chance band and should not be read as a finding.
-- **The question branch is inert.** Identical accuracy under shuffled questions means no prediction changed. Whether the branch collapsed during training or there is an implementation bug has **not** been confirmed (a diagnostic is listed under [Roadmap](#roadmap)).
+- **The question branch is inert.** Identical accuracy under shuffled questions means no prediction changed. Whether the branch collapsed during training or there is an implementation bug has **not** been confirmed.
 - **Consistent with, but not a test of, the paper.** The paper itself states that task-specific models perform near chance on these puzzles. The missing ingredients relative to GenVerOpt — Reptile across paradigms, candidate-in-grid scoring, the unspecified architecture — were not reproduced.
 
 ## Reproducing the experiments
